@@ -1,11 +1,117 @@
-/* Add your CSS styles here */
-/* For basic styling, adjust as needed */
 body {
   font-family: Arial, sans-serif;
-  margin: 20px;
+  margin: 0;
+  padding: 20px;
+  background-color: #f4f4f4;
 }
 
-input,
-button {
-  margin: 5px;
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#productForm {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#productForm label,
+#productForm input[type="text"],
+#productForm input[type="number"] {
+  display: block;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+#productForm input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#productForm input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Product list styles */
+#product-list {
+  margin-top: 30px;
+}
+
+.product-item {
+  background-color: #fff;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.product-item p {
+  margin: 5px 0;
+}
+
+.delete-btn {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background-color: #c82333;
+}
+/* Styles for Update Product form */
+#updateProductForm {
+  max-width: 400px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#updateProductForm label,
+#updateProductForm input[type="text"],
+#updateProductForm input[type="number"] {
+  display: block;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+#updateProductForm input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#updateProductForm input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+#deleteProductForm {
+  margin-bottom: 20px;
+}
+
+#deleteProductForm label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#deleteProductForm input[type="submit"]:hover {
+  background-color: #c82333;
 }

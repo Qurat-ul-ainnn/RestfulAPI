@@ -4,21 +4,49 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Product Management</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h1>Add Product</h1>
-    <form id="productForm">
-      <label for="title">Title:</label><br />
-      <input type="text" id="title" name="title" /><br />
-      <label for="price">Price:</label><br />
-      <input type="number" id="price" name="price" /><br />
-      <label for="tags">Tags:</label><br />
-      <input type="text" id="tags" name="tags" /><br />
-      <label for="slug">Slug:</label><br />
-      <input type="text" id="slug" name="slug" /><br /><br />
-      <input type="submit" value="Add Product" />
-    </form>
+    <div class="container">
+      <h1>Add Product</h1>
+      <form id="productForm">
+        <label for="title">Title:</label><br />
+        <input type="text" id="title" name="title" /><br />
+        <label for="price">Price:</label><br />
+        <input type="number" id="price" name="price" /><br /><br />
+        <input type="submit" value="Add Product" />
+      </form>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <hr />
+
+      <h1>Products</h1>
+      <div id="productList">
+        <!-- Product list will be displayed here -->
+      </div>
+
+      <hr />
+
+      <h1>Update Product</h1>
+      <form id="updateProductForm">
+        <label for="updateTitle">Title:</label><br />
+        <input type="text" id="updateTitle" name="updateTitle" /><br />
+        <label for="updatePrice">Price:</label><br />
+        <input type="number" id="updatePrice" name="updatePrice" /><br />
+        <label for="updateId">Product ID:</label><br />
+        <input type="text" id="updateId" name="updateId" /><br /><br />
+        <input type="submit" value="Update Product" />
+      </form>
+
+      <hr />
+
+      <h1>Delete Product</h1>
+      <form id="deleteProductForm">
+        <label for="deleteId">Product ID:</label><br />
+        <input type="text" id="deleteId" name="deleteId" /><br /><br />
+        <input type="submit" value="Delete Product" />
+      </form>
+    </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
