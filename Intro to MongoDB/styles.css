@@ -1,0 +1,11 @@
+/* Add your CSS styles here */
+/* For basic styling, adjust as needed */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+input,
+button {
+  margin: 5px;
+}
